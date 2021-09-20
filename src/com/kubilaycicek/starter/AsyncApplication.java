@@ -4,7 +4,7 @@ import com.kubilaycicek.service.LotteryAsyncService;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainAsync {
+public class AsyncApplication {
     public static void main(String[] args) throws InterruptedException {
 
         var lotteryAsyncService = new LotteryAsyncService();
