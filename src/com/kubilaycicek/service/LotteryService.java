@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 
 public class LotteryService {
 
-
     public List<Integer> draw(int max, int size) {
         try {
             TimeUnit.SECONDS.sleep(3);
@@ -22,4 +21,5 @@ public class LotteryService {
                 .boxed()
                 .collect(Collectors.toList());
     }
+
 }

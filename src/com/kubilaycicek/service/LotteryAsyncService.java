@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class LotteryAsyncService {
+
     public CompletableFuture<List<Integer>> asyncDraw(int max, int size) {
         return CompletableFuture.supplyAsync(() -> {
             try {
@@ -22,5 +23,6 @@ public class LotteryAsyncService {
                     .collect(Collectors.toList());
         });
     }
+
 }
 
